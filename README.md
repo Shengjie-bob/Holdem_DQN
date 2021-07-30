@@ -1,26 +1,26 @@
 # Holdem_DQN
-#蒙特卡洛基础算法程序
-holdem_calc.py 是采用蒙特卡洛算法的主函数程序
-holdem_functions.py holdem_argparser.py 主要含有一些计算胜率和参数传递和读取的函数 function文件计算胜率 argparser文件是参数传递和读取功能（非重点）
+# 蒙特卡洛基础算法程序
+* holdem_calc.py 是采用蒙特卡洛算法的主函数程序
+* holdem_functions.py holdem_argparser.py 主要含有一些计算胜率和参数传递和读取的函数 function文件计算胜率 argparser文件是参数传递和读取功能（非重点）
 
 
-#强化学习算法程序（用于算法的迭代更新）
-RL_brain.py 是强化学习算法DQN的集成类程序
-env_puke.py 是基于gym类的德扑环境程序 配套DQN算法
-run_holdem.py 是强化学习算法DQN的主函数运行程序
+# 强化学习算法程序（用于算法的迭代更新）
+* RL_brain.py 是强化学习算法DQN的集成类程序
+* env_puke.py 是基于gym类的德扑环境程序 配套DQN算法
+* run_holdem.py 是强化学习算法DQN的主函数运行程序
 
-#强化学习算法测试程序（主要作为使用）
-RL_brain.py 是强化学习算法DQN的集成类程序
-env_puke_test.py 是基于gym类的德扑环境程序 配套DQN算法
-test_holdem.py 是强化学习算法DQN的测试主函数运行程序 并非直接运行 仅用于检查结果
-truth_holdem.py 直接运行测试程序
+# 强化学习算法测试程序（主要作为使用）
+* RL_brain.py 是强化学习算法DQN的集成类程序
+* env_puke_test.py 是基于gym类的德扑环境程序 配套DQN算法
+* test_holdem.py 是强化学习算法DQN的测试主函数运行程序 并非直接运行 仅用于检查结果
+* truth_holdem.py 直接运行测试程序
 
 
 
-#运行程序
-python truth_holdem.py 可以直接在终端进行
-也可以在python的解释器里运行
-其中运行后会出现类似如下结果：
+# 运行程序
+* python truth_holdem.py 可以直接在终端进行 也可以在python的解释器里运行
+* 其中运行后会出现类似如下结果：
+''' 
 successfull loaded the model!
 ['5h', '2s', '3d', '6h'] None
 player2 action :
@@ -62,11 +62,11 @@ Winning Percentages:
 0
 action : 2
 step: 6 player1 reward: 1
+'''
 
-
-#修改玩几轮
+# 修改玩几轮
 truth_holdem.py文件中15 16行代码为：
-#TODO 这里的steps可以改玩几轮
+# TODO 这里的steps可以改玩几轮
 steps = 10
 
 通过修改可以改回合的次数
